@@ -1,0 +1,547 @@
+* {
+    box-sizing:border-box; 
+}
+
+body {
+    padding:0; 
+    margin: 0; 
+    background:#f1e0d6; 
+    font-family: soleil, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color:#4d2d1e; 
+}
+
+:root {
+  /* Changes the primary theme color to purple using primitives */
+  /* --sl-color-primary-50: ; */
+  /* --sl-color-primary-100: var(--sl-color-purple-100); */
+  /* --sl-color-primary-200: var(--sl-color-purple-200); */
+  /* --sl-color-primary-300: var(--sl-color-purple-300); */
+  /* --sl-color-primary-400: var(--sl-color-purple-400); */
+  --sl-color-primary-500: 241, 224, 214;
+  --sl-color-primary-600: 77,45,30;
+  --sl-color-blue-gray-500: 241 224 214; /* transparent background colour
+  /* --sl-color-primary-700: var(--sl-color-purple-700); */
+  /* --sl-color-primary-800: var(--sl-color-purple-800); */
+  /* --sl-color-primary-900: var(--sl-color-purple-900); */
+  /* --sl-color-primary-950: var(--sl-color-purple-950); */
+}
+
+
+.shopnow-dialog{ /* targeting the unique class named hero*/
+  text-align: center;
+}
+
+.dialog {
+  color: #4d2d1e;
+  text-align: center;
+  margin-right: 70px;
+}
+
+.user-input {
+  width: 300px;
+  border-radius: 5px;
+  background-color:  #f1e0d6;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-right:70px;
+}
+
+  /* ==========NAV BAR============= */
+  
+.navicons {
+    width: 6%;
+    height: 7%;
+}
+
+.topbar {
+    position: fixed;
+    z-index: 3; /* brings layers to the top*/ 
+    height: 100px;
+    width: 100%;
+    background-color:#f1e0d6;
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  .primary-menu {
+    display: flex;
+    align-items: center;
+    transition: all 0.6s cubic-bezier(.4,.08,0,1.02);
+    justify-content: center;
+  }
+  
+  .topbar a {
+    color:#4d2d1e; 
+    text-decoration: none;
+    padding: 4em; 
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    transition: all 0.2s;
+  }
+  
+  .topbar a:hover {
+    transform: scale(1.05); 
+  }
+
+  .burger{
+    display: none;
+  }
+
+  .mark-mobile{
+    display: none;
+  }
+  
+
+
+  /* ==========HERO IMAGE============= */
+
+ #home2 {
+    display: none;
+  }
+
+  .heroimage1{ 
+    margin-top: 100px;
+    width:100%;
+    top: 100px;   
+}
+
+.heroinfo { 
+    position: absolute;
+    color: #f1e0d6;
+    top:30%;
+    left:50%;
+    text-align: center;
+}
+
+.heroinfo h1{
+  font-size: 4vw; 
+  font-weight: bold;
+}
+
+.heroinfo h2 {
+  font-size: 1.2vw; /*vw allows text to stretch and resize without distorting*/
+  font-weight:lighter; 
+  margin-left: 10%;
+  margin-right: 10%; 
+  margin-bottom: 10%;
+}
+
+.sl-button {
+background-color: #4d2d1e;
+
+}
+
+
+  /* ==========SHOP OUR RANGE============= */
+  /*desktop html*/
+.shopourrange2 {
+    display: none; 
+}
+
+#shop {
+    position: relative;
+    font-size: 4vw; /*vw allows text to stretch and resize without distorting*/
+    left:50%;
+    transform: translate(-50%,-50%); /*ensuring it is centered from middle of text*/
+    margin:0px;
+    margin-top:50px; 
+}
+
+.shopourrange div{ 
+    transition: ease 1s; /* fast fade as you hover mouse*/
+    display: inline-block;
+    vertical-align: bottom;
+    width: 33%;  
+}
+.shopourrange {
+    text-align: center;
+}
+
+.shopourrange :hover{
+    font-weight: bold;
+    transition: ease 0.5s;
+}
+.shopourrange img {
+    transition: ease 1s;
+}
+.shopourrange img:hover{
+    transform: scale(1.05); /* the state/size your image will grow to*/
+}
+
+ /* ==========WHAT IS CEREMONIAL CACAO============= */
+
+#about1 {
+  display: none; 
+}
+
+#about{ /*be more specific add the class*/
+    display: flex;
+    align-items: center;
+    margin-top:10%
+ }
+
+ .rightcontainer {
+     flex-basis: 70%;
+     position:relative;
+     margin-right: 5%;
+ }
+
+ .rightcontainer h3 {
+     margin:0px;
+     font-size: 4vw;
+     margin-top: -4% ; 
+ }
+
+ .leftcontainer {
+    flex-basis: 30%;
+    margin-left:40px;
+ }
+
+  /* ==========PREPARING CEREMONIAL CACAO============= */
+.recipes2{
+  display: none;
+}
+
+#recipes {
+  margin:0px;
+  font-size: 4vw;
+  margin-top:4% ; 
+  text-align: center;
+}
+.recipes div{
+  text-align:center; 
+  display: inline-block;
+  width: 32%;
+}
+
+.recipes img {
+  padding:15px; 
+  margin: 30px; 
+  transition: ease 1s;
+}
+
+.recipes img:hover {
+  transform: scale(1.05);
+}
+
+#method {
+  display: flex;
+}
+  .rightcontainer2 {
+    flex-basis: 70%;
+    margin-right:40px
+}
+
+.rightcontainer2 h3, .leftcontainer2 h3 {
+    font-size: 2vw;
+}
+
+.leftcontainer2 {
+   flex-basis: 30%;
+   margin-left:40px;
+}
+
+ /* ==========RECOMMENDED DOSAGES============= */
+ .dosages2 {
+   display: none;
+ }
+ #dosages {
+  font-size: 4vw;
+  text-align: center;
+}
+.dosages div{
+  text-align:center;
+  display: inline-block;
+  padding-left:45px; 
+  padding-right:45px; 
+}
+
+
+ /* ==========Gallery============= */
+#instagram {
+  font-size: 4vw;
+  text-align: center;
+}
+
+.swiper {
+  width: 90%;
+  height: 90%;
+  margin-left:40px;
+  margin-right:40px;
+  margin-bottom: 100px;
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+:root {
+  --swiper-theme-color:#f1e0d6;
+}
+
+
+  /*===========footer===========*/ 
+  .footer {
+    display: flex; 
+    justify-content: center; 
+    transition: ease 1s;
+ } 
+
+    .footer {
+    text-align:center;
+   }  
+
+   .footer :hover {
+    font-weight: bold;
+    transition: ease 0.2s;
+   }
+
+ 
+
+
+
+
+
+@media only screen and (max-width: 640px) { 
+
+
+  /* nav menu */
+  .somacacaobrandmark{
+    display: none;
+  }
+
+  .mark-mobile{
+    display: block; /* only load this css at this screen size*/ 
+    z-index: 10;
+  }
+
+  .burger{
+    display: block;
+    z-index: 10;
+    font-size: 25px;
+  }
+
+  .navicons{
+    display: none;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100vw;
+  }
+  
+  .primary-menu {
+    position: fixed;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 40vh;
+    right: 0px;
+    padding: 5%;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    z-index: 100;
+    background-color:#f1e0d6 ;
+  }
+
+   .show{
+    transform: translateX(0%);
+  }
+
+  /*hero image*/
+  #home {
+    display: none;
+  }
+
+  #home2 {
+    display:block;
+  }
+
+  .shopnow-dialog2{
+    text-align: center;
+  }
+  
+  .dialog2 {
+    color: #4d2d1e;
+    text-align: center;
+    margin-right: 70px;
+  }
+  
+  .user-input2 {
+    width: 300px;
+    border-radius: 5px;
+    background-color:  #f1e0d6;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-right:70px;
+
+  }
+  .heroimagemobile{ 
+    margin-top: 100px;
+    width:100%;
+    height: 50%;
+    top: 100px;   
+}
+
+.heroinfo2 { 
+    position: absolute;
+    color: #f1e0d6;
+    top:20%;
+    text-align: center;
+}
+
+.heroinfo2 h1{
+  font-size: 5vw; 
+  font-weight: bold;
+}
+
+.heroinfo2 h2 {
+  font-size: 3vw; /*vw allows text to stretch and resize without distorting*/
+  font-weight:lighter; 
+  margin-left: 10%;
+  margin-right: 10%; 
+}
+
+.sl-button {
+background-color: #4d2d1e;
+
+}
+
+
+  /*shop our range*/
+  .shopourrange{
+    display:none; 
+  }
+
+  .shopourrange2 {
+    display: block;
+  }
+
+  .shopourrange2 div{ /*be more specific add the class*/
+    transition: ease 1s; /* fast fade as you hover mouse*/
+    width: 100%;  
+}
+.shopourrange2 {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.shopourrange2 :hover{
+    font-weight: bold;
+    transition: ease 0.5s;
+    font-size: 2.7vw;
+}
+.shopourrange2 img {
+    transition: ease 1s;
+}
+.shopourrange2 img:hover{
+    transform: scale(1.05); /* the state/size your image will grow to*/
+}
+
+
+
+/*what is ceremonial cacao*/
+#home {
+  display:none; 
+}
+#about {
+  display: none; 
+}
+
+#about1 {
+  display: block; 
+  align-items: center;
+  margin-top:10%
+}
+
+.rightcontainer1 {
+  text-align: justify;
+   flex-basis: 70%;
+   position:relative;
+   margin-right: 10%;
+   margin-left:10%;
+   font-size: 2.5vw;
+}
+
+.rightcontainer1 h3 {
+  text-align: center;
+   margin:0px;
+   font-size: 4vw;
+   margin-top: -4% ; 
+}
+
+/*preparing ceremonial cacao*/ 
+.recipes, #method  {
+  display:none; 
+}
+
+.recipes2 img {
+  padding:15px; 
+  margin: 30px; 
+  transition: ease 1s;
+}
+
+.recipes2 img:hover {
+  transform: scale(1.05);
+}
+
+.recipes2 {
+  display: block;
+  text-align: center;
+  margin-top: 2%;
+}
+
+#method2 {
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 2.5vw;
+
+}
+
+/*reccomended dosages*/
+.dosages {
+  display:none
+}
+
+.dosages2 {
+  display: block;
+}
+
+
+.dosages2 div{
+  text-align:center;
+  display: inline-block;
+  padding-left:10px; 
+  padding-right:10px; 
+  margin-left: 15%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
